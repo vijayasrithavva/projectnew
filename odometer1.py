@@ -10,7 +10,7 @@ if read1 %10 == 0 or read1 < 12 or int(read[1]) <= int(read[0]) or read1 >89:
 	print("invalid input")
 
 else:
-	if(validity(read1 - 1) == True):
+	if validity(read1 - 1):
 		print("previous reading",read1 - 1)
 	else:
 		r = (int(read[0])-1)*10 + 9
@@ -18,7 +18,7 @@ else:
 			print("previous reading = 89")
 		else:
 			print('previous reading',r)
-	if validity(read1 + 1) == True:
+	if validity(read1 + 1):
 		print("Next reading = ",read1 + 1)
 	else:
 		w = (int(read[0])+1)*10 + (int(read[0])+2)
